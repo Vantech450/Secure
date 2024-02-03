@@ -8,5 +8,3 @@ urlpatterns = [
     path('', include('base.urls')),
     re_path(r'^.*$', TemplateView.as_view(template_name='index.html')),
 ]
-
-if settings.DEBUG:
